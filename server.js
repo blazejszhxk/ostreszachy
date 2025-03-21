@@ -33,7 +33,7 @@ app.get('/harmonogram', (req, res) => {
   const person = getNextPerson();
 
   if (person) {
-    const formattedResponse = `${person.name} ${person.day} (${moment(person.date).format('DD/MM')}) ${person.start} - ${person.end}`;
+    const formattedResponse = `${person.day} (${moment(person.date).format('DD/MM')}) ${person.name} ${person.start} - ${person.end}`;
     res.send(formattedResponse);
   } else {
     res.send('nikogo ni ma :(');
