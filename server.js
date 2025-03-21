@@ -4,8 +4,7 @@ const app = express();
 const port = 3000;
 
 const schedule = [
-  { name: 'Magda', date: '2025-03-21', day: 'Piątek', start: '16:30', end: '18:30' },
-  { name: 'Kuba', date: '2025-03-22', day: 'Sobota', start: '12:30', end: '13:00' },
+  { name: 'Patryk', date: '2025-03-23', day: 'Niedziela', start: '16:30', end: '18:00' },
 ];
 
 function getNextPerson() {
